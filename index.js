@@ -1,1 +1,41 @@
 let content = document.querySelector('.js-generated.content')
+et header = document.createElement('h1')
+header.setAttribute('class','dog-name')
+header.append('Rizzo')
+content.append(header)
+
+let divide = document.createElement('div')
+divide.setAttribute('class','dog-content')
+let dogImg = document.createElement('img')
+dogImg.setAttribute('class','dog-image')
+dogImg.src = './assets/rizzo.jpg'
+divide.append(dogImg)
+content.append(divide)
+
+let div2 = document.createElement('div')
+div2.setAttribute('class','dog-details')
+let hdr2 = document.createElement('h3')
+content.append(div2)
+hdr2.append('Description:')
+content.append(hdr2)
+
+let p1 = document.createElement('p')
+p1.append('This gentle dog is aloof toward her owner, and never comes when called. She always acts as though any stranger she meets will harm her, and dislikes other animals.')
+content.append(p1)
+
+let hdr3 = document.createElement('h3')
+hdr3.append('Feeding Times:')
+content.append(hdr3)
+
+let ul1 = document.createElement('ul')
+    let li1 = document.createElement('li')
+        li1.append('9:00 am')
+    let li2 = document.createElement('li')
+        li2.append('12:00 pm')
+    let li3 = document.createElement('li')
+        li3.append('5:00 pm')
+
+ content.append(ul1)
+ ul1.append(li1)
+ ul1.append(li2)
+ ul1.append(li3)
